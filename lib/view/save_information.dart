@@ -2,8 +2,9 @@ import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 
 class Information extends StatefulWidget {
-  var deviceInfo;
-  Information({super.key, required this.deviceInfo});
+  // ignore: prefer_typing_uninitialized_variables
+  // var deviceInfo;
+  Information({super.key,  });
  
   @override
   State<Information> createState() => _InformationState();
@@ -37,6 +38,7 @@ var data;
           ),
           body: Column(children: [
             Container(
+              padding: EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
               ),
