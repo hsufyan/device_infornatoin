@@ -1,16 +1,83 @@
 # device_information
 
-A new Flutter project.
+A lightweight MVP Flutter project that collects essential **device information** from the user's device and sends it to a backend server.  
+Useful for onboarding, security validation, analytics, and device-binding flows.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- Fetch device details such as:
+  - Model
+  - Manufacturer
+  - OS version
+  - Unique device ID
+  - Physical device check
+- Convert device metadata into JSON
+- Send data to REST API (POST request)
+- Simple and clean UI
+- MVP-ready architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+
+- **Flutter** (3.22+)
+- **device_info_plus** (for device data)
+- **http** (for API calls)
+
+---
+
+## 📦 Packages Used
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+
+  device_info_plus: ^10.1.0
+  http: ^1.2.0
+
+📲 Data Collected
+📱 Android
+
+Device ID
+
+Model
+
+Manufacturer
+
+Android Version
+
+SDK Level
+
+Physical Device (true/false)
+
+🍏 iOS
+
+Identifier for Vendor
+
+Model
+
+OS Version
+
+Physical Device (true/false)
+
+📁 Project Structure
+lib/
+ ├── main.dart
+ ├── screens/
+ │     └── home_screen.dart
+ ├── controllers/
+ │     └── device_controller.dart
+ ├── utils/
+ │     └── device_helper.dart
+ ├── services/
+       └── api_service.dart
+
+🧑‍💻 Developer
+
+Muhammad Sufyan – Flutter Developer
+GitHub: https://github.com/hsufyan
+
+LinkedIn: https://linkedin.com/in/muhammad-sufyan-376121200/
